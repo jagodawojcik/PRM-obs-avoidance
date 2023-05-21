@@ -2,7 +2,7 @@
 Python implementation Probabilistic Roadmap Planner for robotic path planning and obstacle avoidance in 2d grid environment.
 
 
-#The PRM algorithm steps
+# The PRM algorithm steps
 1. generate a number of sample points uniformly at random, check each point for collision, leave samples in free config space only. The number of generated points is specified by N_NODES parameter;
 2. Add start and end points to the graph;
 3. Connect each point with the nodes in their neighbourhood specified by RADIUS parameter;
@@ -17,7 +17,15 @@ Object of class PRM requires to specify:
 
 The obstacles are defined as a list of (x, y, r) coordinates, where 'x','y' define the position of the center of the circular obstacle in the 2d grid, while the parameter 'r' is the radius of the obstacle.
 
-##Solution Example Plots
+# Example solution
+A) 150 Nodes and Radius of 2:
+<br>
+![150 Nodes and Radius=2](PRM_150_NODES_2_RADIUS.png)
+<br>
+B) 50 Nodes and Radius of 5:
+<br>
+![30 Nodes and Radius=5](PRM_30_NODES_5_RADIUS.png)
+
 
 
 
